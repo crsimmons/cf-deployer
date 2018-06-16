@@ -34,6 +34,8 @@ export DOMAIN=
 ./install_cf.sh
 ```
 
+Deployment takes around 1-1.5 hours
+
 Store the following files somewhere safe:
 
 * cf/deployment-vars.yml
