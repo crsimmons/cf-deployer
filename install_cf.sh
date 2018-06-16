@@ -3,6 +3,11 @@
 set -eu
 
 echo "================================================"
+echo "Making sure submodule is pulled"
+echo "================================================"
+git submodule update --init --recursive
+
+echo "================================================"
 echo "Generating self-signed certs for load balancers"
 echo "================================================"
 pushd certs

@@ -19,6 +19,7 @@
 * bosh-cli >= v2.0.48
 * terraform >= 0.11.0
 * ruby (necessary for bosh create-env) tested with v2.4.0
+* `git clone --recursive https://github.com/crsimmons/cf-deployer.git`
 
 ## Deploy
 
