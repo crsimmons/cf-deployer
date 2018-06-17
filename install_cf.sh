@@ -13,8 +13,8 @@ echo "================================================"
 pushd certs
 terraform init
 terraform apply -var "domain=${DOMAIN}" -auto-approve > /dev/null
-terraform output -json | jq -r '.bbl_cert.value' > bbl_cert.pem
-terraform output -json | jq -r '.bbl_private_key.value' > bbl_key
+terraform output bbl_cert >bbl_cert.pem
+terraform output bbl_private_key >bbl_key
 popd
 
 echo "================================================"
